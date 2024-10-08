@@ -1,25 +1,43 @@
 'use client';
 
 import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import TechIconsList from '../components/TechIconsList';
 
 export default function AboutMe() {
   return (
-    <section className="snap-start w-screen h-screen flex-shrink-0 flex items-center justify-center bg-gray-100 text-center p-10">
-      <div>
-        <h1 className="text-4xl font-bold mb-8">About Me</h1>
-        <p className="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+    <section className="snap-start w-screen h-screen flex-shrink-0 flex flex-col items-center justify-around bg-gray-100 text-center p-10">
+      {/* Header and Social Media Links as a vertical flexbox */}
+      <div className="flex flex-col items-center space-y-8">
+        {/* Header */}
+        <header className="flex flex-col items-center">
+          <h1 className="text-7xl font-bold mb-4">Jacob's Portfolio</h1> {/* Bigger font size */}
+          <p className="text-3xl mb-2">Location: Your City, Country</p> {/* Larger text */}
+          <p className="text-2xl">Contact: your-email@example.com</p> {/* Larger text */}
+        </header>
+
+        {/* Social Media Links - Icons remain horizontally aligned */}
+        <div className="flex space-x-8">
+          <a href="https://github.com/JacobRuddiman" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-6xl text-black hover:text-gray-600" /> {/* Larger GitHub icon */}
+          </a>
+          <a href="https://linkedin.com/in/jacobruddiman" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-6xl text-blue-600 hover:text-blue-800" /> {/* Larger LinkedIn icon */}
+          </a>
+        </div>
+      </div>
+
+      {/* Technology Icons List */}
+      <TechIconsList />
+
+      {/* About Me Text */}
+      <div className="mt-10">
+        <p className="text-xl mb-4">
+          I’m a full-stack developer with expertise in React, Next.js, Python, and Node.js. I enjoy building scalable web applications and solving complex technical problems.
         </p>
-        <p className="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor.
+        <p className="text-xl mb-4">
+          My passion for software development has driven me to constantly learn and adopt new technologies, enabling me to deliver efficient and effective solutions in a variety of projects.
         </p>
-        <p className="mb-4">
-          Fusce consectetur, nunc a aliquet condimentum, lectus magna auctor orci, ut ornare justo lacus ac lorem. Curabitur euismod nibh nec sem tincidunt, in convallis est blandit.
-        </p>
-        <p className="mb-4">
-          Donec luctus semper est, eget porta eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dapibus felis, vitae interdum mauris.
-        </p>
-        {/* Add more paragraphs as needed */}
       </div>
     </section>
   );
