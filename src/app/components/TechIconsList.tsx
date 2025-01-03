@@ -60,7 +60,7 @@ const techIcons = [
 
 export default function TechIconsList() {
   return (
-    <div className="grid grid-cols-4 gap-8"> {/* 4 columns grid with gaps between icons */}
+    <div className="grid grid-cols-4 gap-12"> {/* 4 columns grid with gaps between icons */}
       {techIcons.map((tech, index) => (
         <div
           key={index}

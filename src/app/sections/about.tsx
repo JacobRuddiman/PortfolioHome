@@ -11,9 +11,8 @@ export default function AboutMe() {
       <div className="flex flex-col items-center space-y-8">
         {/* Header */}
         <header className="flex flex-col items-center">
-          <h1 className="text-7xl font-bold mb-4">Jacob's Portfolio</h1> {/* Bigger font size */}
-          <p className="text-3xl mb-2">Location: Your City, Country</p> {/* Larger text */}
-          <p className="text-2xl">Contact: your-email@example.com</p> {/* Larger text */}
+          <h1 className="text-7xl font-bold mb-4">Jacob Ruddiman</h1> {/* Bigger font size */}
+          <a href="mailto:jacobruddiman@gmail.com" className="text-2xl">jacobruddiman@gmail.com</a> {/* Larger text */}
         </header>
 
         {/* Social Media Links - Icons remain horizontally aligned */}

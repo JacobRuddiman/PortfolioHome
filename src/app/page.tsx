@@ -1,17 +1,20 @@
+'use client';
+
 import React from 'react';
 import AboutMe from './sections/about';
 import Projects from './sections/projects';
-import OtherSection from './sections/otherSectoin';
+import OtherSection from './sections/otherSection';
 
 export default function Home() {
+  
   return (
-    <div className="w-screen h-screen overflow-x-scroll overflow-y-hidden flex snap-x snap-mandatory">
+    <div className="scroll-smooth">
       {/* About Me Section */}
       <AboutMe />
-      
+
       {/* Projects Section */}
       <Projects />
-      
+
       {/* Other Section */}
       <OtherSection />
     </div>

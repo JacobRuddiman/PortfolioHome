@@ -1,0 +1,5 @@
+wood workshop that the cards can be the "wood" in. 
+The card images replicate what is on the screen for each page, the portfolio website is easy, maybe use cookies for the other pages so they can be open in other tabs
+
+
+A simple nn that predicts mouse movement based on position or something that learns as they use the page, updates visaully 
