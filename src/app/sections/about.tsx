@@ -6,37 +6,44 @@ import TechIconsList from '../components/TechIconsList';
 
 export default function AboutMe() {
   return (
-    <section className="snap-start w-screen h-screen flex-shrink-0 flex flex-col items-center justify-around bg-gray-100 text-center p-10">
-      {/* Header and Social Media Links as a vertical flexbox */}
-      <div className="flex flex-col items-center space-y-8">
-        {/* Header */}
-        <header className="flex flex-col items-center">
-          <h1 className="text-7xl font-bold mb-4">Jacob Ruddiman</h1> {/* Bigger font size */}
-          <a href="mailto:jacobruddiman@gmail.com" className="text-2xl">jacobruddiman@gmail.com</a> {/* Larger text */}
-        </header>
+    <section className="snap-start w-screen h-screen flex-shrink-0 flex flex-col items-center justify-around text-center p-10">
+      <div className="flex flex-row items-center w-full space-x-10">
+        {/* Left Column: Header, Social Links, and Tech Icons */}
+        <div className="flex flex-col items-center w-2/3 space-y-8 ">
+          {/* Header and Social Media Links */}
+          <div className="flex flex-col items-center space-y-4">
+            <header className="flex flex-col items-center">
+              <h1 className="text-5xl font-bold mb-2">Jacob Ruddiman</h1>
+              <a href="mailto:jacobruddiman@gmail.com" className="text-2xl">
+                jacobruddiman@gmail.com
+              </a>
+            </header>
+            <div className="flex space-x-4">
+              <a href="https://github.com/JacobRuddiman" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="text-6xl text-black hover:text-gray-600" />
+              </a>
+              <a href="https://linkedin.com/in/jacobruddiman" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-6xl text-blue-600 hover:text-blue-800" />
+              </a>
+            </div>
+          </div>
 
-        {/* Social Media Links - Icons remain horizontally aligned */}
-        <div className="flex space-x-8">
-          <a href="https://github.com/JacobRuddiman" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-6xl text-black hover:text-gray-600" /> {/* Larger GitHub icon */}
-          </a>
-          <a href="https://linkedin.com/in/jacobruddiman" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-6xl text-blue-600 hover:text-blue-800" /> {/* Larger LinkedIn icon */}
-          </a>
+          {/* Technology Icons */}
+          <TechIconsList />
         </div>
-      </div>
 
-      {/* Technology Icons List */}
-      <TechIconsList />
-
-      {/* About Me Text */}
-      <div className="mt-10">
-        <p className="text-xl mb-4">
-          I’m a full-stack developer with expertise in React, Next.js, Python, and Node.js. I enjoy building scalable web applications and solving complex technical problems.
-        </p>
-        <p className="text-xl mb-4">
-          My passion for software development has driven me to constantly learn and adopt new technologies, enabling me to deliver efficient and effective solutions in a variety of projects.
-        </p>
+        {/* Right Column: About Me Text and Profile Picture */}
+        <div className="flex flex-col items-center w-1/3 space-y-4">
+          <img
+            src="/images/profile_pic.png" // Path to profile picture
+            alt="Profile Picture of Jacob Ruddiman"
+            className="rounded-full w-48 h-48 object-cover shadow-lg mx-auto"
+          />
+          <p className="text-lg text-center">
+            I've been coding for the past 7 years or so, based near Southampton in the UK. I've
+            found myself working across both web development and machine learning projects.
+          </p>
+        </div>
       </div>
     </section>
   );

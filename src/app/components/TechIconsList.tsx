@@ -27,12 +27,6 @@ const techIcons = [
     projects: [],
   },
   {
-    name: 'Node.js',
-    IconComponent: FaNodeJs,
-    color: 'text-green-500',
-    projects: ['PromptBros', 'Plant Shop Front'],
-  },
-  {
     name: 'PostgreSQL',
     IconComponent: SiPostgresql,
     color: 'text-blue-500',

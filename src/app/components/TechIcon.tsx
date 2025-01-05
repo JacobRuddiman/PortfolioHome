@@ -24,7 +24,7 @@ export default function TechIcon({ name, IconComponent, projects, color }: TechI
 
       {/* Pop-up with project list below the icon */}
       <div
-        className={`absolute bg-white border border-gray-300 rounded-lg shadow-lg p-4 w-80 z-50 transition-opacity duration-300 ${
+        className={`absolute bg-white text-black border border-gray-300 rounded-lg shadow-lg p-4 w-80 z-50 transition-opacity duration-300 ${
           hovered ? 'opacity-100' : 'opacity-0 delay-200'
         }`} 
         style={{ top: '90px', pointerEvents: hovered ? 'auto' : 'none' }} // Positioned further below the icon
