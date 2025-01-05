@@ -41,7 +41,7 @@ export default function AboutMe() {
           />
           <p className="text-lg text-center">
             I've been coding for the past 7 years or so, based near Southampton in the UK. I've
-            found myself working across both web development and machine learning projects.
+            found myself working across both web development professionally and machine learning personal projects.
           </p>
         </div>
       </div>
