@@ -40,7 +40,7 @@ export default function AboutMe() {
             className="rounded-full w-48 h-48 object-cover shadow-lg mx-auto"
           />
           <p className="text-lg text-center">
-            I've been coding for the past 7 years or so, based near Southampton in the UK. I've
+            I&#39;ve been coding for the past 7 years or so, based near Southampton in the UK. I&#39;ve
             found myself working across both web development professionally and machine learning personal projects.
           </p>
         </div>

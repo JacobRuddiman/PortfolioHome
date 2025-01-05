@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FaReact, FaPython, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaPython } from 'react-icons/fa';
 import { SiNextdotjs, SiPostgresql, SiTypescript, SiTailwindcss } from 'react-icons/si';
 import TechIcon from './TechIcon';
 import PrismaIcon from '../icons/prisma-3.svg'; // Import Prisma SVG
