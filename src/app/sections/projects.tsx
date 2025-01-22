@@ -11,7 +11,7 @@ export default function Projects() {
       title: 'PromptBros',
       description: 'An AI content management system where I focused on building the admin management interface as well as some front-end components, gaining hands-on experience in creating user-centric web applications.',
       image: '/images/card_image1.png',
-      link: 'https://example.com/project-one',
+      link: 'https://promptbros.ai/',
       icons: [
         <SiNextdotjs key="nextjs" className="text-2xl text-gray-700" />,
         <FaReact key="react" className="text-2xl text-blue-500" />,
@@ -24,7 +24,7 @@ export default function Projects() {
       title: 'Plant Shop',
       description: 'A responsive storefront for a plant shop built with Next.js and Postgres. This project helped me refine my coding practices and focus on building scalable, maintainable web solutions.',
       image: '/images/card_image2.png',
-      link: 'https://example.com/project-two',
+      link: 'https://house-plant-shop.vercel.app/home',
       icons: [
         <FaReact key="react" className="text-2xl text-blue-500" />,
         <SiTypescript key="typescript" className="text-2xl text-blue-600" />,
